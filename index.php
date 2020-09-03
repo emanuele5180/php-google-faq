@@ -27,8 +27,23 @@ queste domande e risposte con PHP. -->
   ];
 
   foreach ($database as $faq) {
+    ?>
+    <h1>
+      <?php
+      echo $faq["question"];
+      ?>
+    </h1>
+    <div class="">
+      <?php "<br/>" ?>
+    </div>
+    <p>
+      <?php
+        echo $faq["answer"];
+      ?>
+    </p>
 
-    echo $faq["question"]. "<br/>".$faq["answer"];
+    <?php
+
 
   }
 
